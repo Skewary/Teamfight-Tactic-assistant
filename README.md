@@ -1,10 +1,7 @@
-# Teamfight-Tactic-assistant
-云顶梭哈助手，一键梭哈
 
-
-运行效果图如下：
-![image](https://github.com/Skewary/Teamfight-Tactic-assistant/assets/35257338/e93991a0-394e-4b43-b99d-6e9fac6f861d)
-
-
-按下D键自动移动鼠标到预设过的卡牌。
-预设策略在config.json中，选取策略在app.py当中。
+<div class="markdown prose w-full break-words dark:prose-invert light"><h1>Teamfight-Tactic-assistant</h1><p>云顶梭哈助手，一键梭哈。</p><h2>功能</h2><ul><li>在指定窗口中捕获屏幕截图</li><li>使用模板匹配算法在截图中匹配图像模板</li><li>根据匹配结果执行鼠标移动或键盘操作</li></ul><h2>依赖项</h2><ul><li>Python 3.x</li><li>pynput 库</li><li>pyautogui 库</li><li>opencv-python 库</li><li>numpy 库</li><li>win32gui 库</li></ul><h2>安装依赖项</h2><pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">pip install pynput
+pip install pyautogui
+pip install opencv-python
+pip install numpy
+pip install pywin32
+</code></div></div></pre><h2>使用方法</h2><ol><li>在 <code>template_folder</code> 文件夹中添加要匹配的图像模板文件（支持 <code>.png</code> 格式）。</li><li>修改 <code>window_title</code> 变量为你要操作的窗口标题。</li><li>运行脚本 <code>main.py</code>。</li></ol><p>当你按下 Tab 键时，脚本将在指定窗口中进行屏幕截图，并使用模板匹配算法查找匹配的图像模板。如果找到匹配，脚本将执行相应的鼠标移动操作，并输出匹配结果。</p><p>请确保窗口处于活动状态，并且模板图像具有足够的相似度以进行匹配。</p><h2>注意事项</h2><ul><li>本脚本仅适用于 Windows 系统。</li><li>请确保依赖项已正确安装。</li><li>在使用脚本之前，确保你具有合法的操作权限。</li></ul><h2>许可证</h2><p>本项目基于 <a href="LICENSE" target="_new">MIT 许可证</a>。请在使用前阅读并遵守许可证规定。</p><p>如果有任何问题或反馈，请联系 []。</p><p>祝使用愉快！</p>
